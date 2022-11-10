@@ -1,0 +1,99 @@
+
+<header class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow ">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 " href="#">{{title.toUpperCase()}}
+  </a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="#">ACCOUNT</a>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid ">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+      <div class="position-sticky pt-3 sidebar-sticky sticky-top" id="navbarSupportedContent">
+
+        <ul ngbNav routerLinkActive="active-link"> <!--class="nav flex-column mb-2"-->
+
+          <li ngbNavItem="my-bag-display">
+            <a ngbNavLink class="btn-dark text-light" routerLink="my-bag-display"><!--(click)="gotoBag()"-->
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              My Bag
+            </a>
+          </li>
+
+
+          <li ngbNavItem="flight-path-display">>
+            <a ngbNavLink class="btn-dark text-light" routerLink="flight-chart-display">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                   class="bi bi-airplane-engines" viewBox="0 0 16 16">
+                <path
+                  d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0ZM7 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1c.213 0 .458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7V3Z"/>
+              </svg>
+                Flight Path
+            </a>
+          </li>
+
+
+          <li ngbNavItem="disc-finder-display">>
+            <a ngbNavLink class="btn-dark text-light" routerLink="disc-finder-display">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                   viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+              Disc Finder
+            </a>
+          </li>
+
+
+          <li ngbNavItem="friends-display">>
+            <a ngbNavLink class="btn-dark text-light" routerLink="friends-display">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                   class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                <path
+                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+              </svg>
+              Friends
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <main class=" col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="chartjs-size-monitor">
+        <router-outlet></router-outlet>
+      <!--
+        <div *ngIf="viewBag">
+          <app-discs></app-discs>
+        </div>
+        <div *ngIf="viewFlight">
+          <app-flight-chart-display></app-flight-chart-display>
+        </div>
+        <div *ngIf="viewDiscFind">
+          <app-disc-finder-display></app-disc-finder-display>
+        </div>
+        <div *ngIf="viewFriends">
+          <app-friends-display></app-friends-display>
+        </div>
+      -->
+      </div>
+      <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="2304" height="972"
+              style="display: block; height: 1000px; width: 1152px;"></canvas>
+    </main>
+  </div>
+</div>
+
+
